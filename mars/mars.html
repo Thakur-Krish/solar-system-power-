@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mars.css">
+    <title>Mars - The Red Planet</title>
+</head>
+<body>
+    <h1>Mars</h1>
+    <p>Mars, also known as the Red Planet, is the fourth planet from the Sun. It has the tallest volcano and the deepest canyon in the Solar System.</p>
+    
+    <div class="planet-container">
+        <img src="../image/mars.jpg" alt="Mars">
+        
+        <div class="buttons">
+            <button onclick="toggleInfo()">ℹ️ More Info</button>
+            <button onclick="toggleFacts()">📜 More Facts</button>
+           
+        </div>
+        
+        <div class="info-box" id="infoBox">
+            <p>Mars has a thin atmosphere composed mostly of carbon dioxide. It is home to the largest volcano, Olympus Mons, and the deepest canyon, Valles Marineris.</p>
+        </div>
+
+        <div class="info-box" id="factsBox">
+            <ul>
+                <li>🔴 Mars has a reddish color due to iron oxide (rust) on its surface.</li>
+                <li>🛰️ NASA's Perseverance Rover is currently exploring Mars.</li>
+                <li>❄️ Mars has polar ice caps made of water and carbon dioxide.</li>
+                <li>🌋 Olympus Mons is nearly three times taller than Mount Everest.</li>
+                <li>👽 Scientists are searching for signs of ancient life on Mars.</li>
+            </ul>
+        </div>
+    </div>
+
+    <audio id="marsSound" src="../audio/mars.mp3"></audio>
+    <script src="mars.js"></script>
+</body>
+</html>

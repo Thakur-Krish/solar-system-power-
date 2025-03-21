@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus - The Ice Giant</title>
+    <link rel="stylesheet" href="uranus.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow-text">Uranus - The Ice Giant</h1>
+        <p class="description">Uranus is the seventh planet from the Sun, known for its stunning blue color due to methane in its atmosphere.</p>
+        
+        <div class="planet-container">
+            <img src="../image/uranus.jpg" alt="Uranus Image" class="planet-image">
+            <div class="buttons">
+                <button onclick="toggleInfo()">ℹ️ More Info</button>
+                <button onclick="toggleFacts()">🔍 More Facts</button>
+                
+            </div>
+        </div>
+        
+        <div class="info-box glass" id="infoBox">
+            <p>Uranus is unique because it rotates on its side, making it different from all other planets. It has a faint ring system and 27 known moons.</p>
+        </div>
+
+        <div class="facts-box glass" id="factsBox">
+            <ul>
+                <li>🌍 Diameter: 50,724 km</li>
+                <li>🌡️ Temperature: -224°C</li>
+                <li>🔄 Rotation Period: 17.24 hours</li>
+                <li>🛰️ Moons: 27 known moons</li>
+            </ul>
+        </div>
+    </div>
+    
+    <audio id="planetSound" src="../audio/uranus.mp3"></audio>
+    <script src="uranus.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    font-size: 3rem;
+    text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+}
+
+/* Planet Image with Glow Effect */
+.planet-container img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+    transition: transform 0.5s ease-in-out;
+}
+
+.planet-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: black;
+    font-size: 18px;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.6);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff9900, #ffcc00);
+    transform: scale(1.1);
+}
+
+/* Info Box (Glassmorphism Effect) */
+.info-box {
+    display: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Facts List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+/* Tablet */
+@media (max-width: 1024px) {  
+    body { font-size: 18px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {  
+    body { font-size: 16px; }
+    nav ul { flex-direction: column; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {  
+    body { font-size: 14px; }
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3);
+}
+
+.jupiter-video {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e68900;
+}
+
+.info-box {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/* Tablet */
+@media (max-width: 1024px) {  
+    body { font-size: 18px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {  
+    body { font-size: 16px; }
+    nav ul { flex-direction: column; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {  
+    body { font-size: 14px; }
+}

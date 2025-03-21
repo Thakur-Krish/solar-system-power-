@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter - The Gas Giant</title>
+    <link rel="stylesheet" href="jupiter.css">
+</head>
+<body>
+    <h1>Jupiter</h1>
+    <p>Jupiter is the largest planet in our solar system. It has a powerful magnetic field and dozens of moons.</p>
+
+    <div class="planet-container">
+        <!-- Jupiter Video -->
+        <video controls autoplay loop muted class="jupiter-video">
+            <source src="../image/Jupiter.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="buttons">
+            <button onclick="toggleInfo()">ℹ️ More Info</button>
+            <button onclick="toggleFacts()">📜 More Facts</button>
+            
+        </div>
+    </div>
+
+    <div class="info-box" id="infoBox">
+        <p>Jupiter is a gas giant primarily composed of hydrogen and helium. Its Great Red Spot is a giant storm larger than Earth.</p>
+    </div>
+
+    <div class="info-box" id="factsBox">
+        <ul>
+            <li>🌀 Jupiter has the most powerful storms in the solar system.</li>
+            <li>🌕 It has over **79 known moons**, including Ganymede, the largest moon in the solar system.</li>
+            <li>⚡ Jupiter has a **strong magnetic field**, 14 times stronger than Earth's.</li>
+            <li>☄️ A comet, Shoemaker-Levy 9, crashed into Jupiter in 1994.</li>
+        </ul>
+    </div>
+
+    <script src="jupiter.js"></script>
+</body>
+</html>

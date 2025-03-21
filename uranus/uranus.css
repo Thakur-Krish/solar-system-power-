@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    background: radial-gradient(circle, #000011, #000022);
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px rgba(173, 216, 230, 0.8);
+}
+
+.planet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.planet-image {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px cyan;
+    transition: transform 0.5s ease-in-out;
+}
+
+.planet-image:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid cyan;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: cyan;
+    color: black;
+    transform: scale(1.1);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 15px;
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: none;
+}
+
+.glow-text {
+    text-shadow: 0 0 15px cyan;
+}
+/* Tablet */
+@media (max-width: 1024px) {  
+    body { font-size: 18px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {  
+    body { font-size: 16px; }
+    nav ul { flex-direction: column; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {  
+    body { font-size: 14px; }
+}

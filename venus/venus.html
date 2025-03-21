@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="venus.css">
+    <title>Venus - The Hottest Planet</title>
+</head>
+<body>
+    <h1>Venus</h1>
+    <p>Venus is the second planet from the Sun and the hottest planet in our solar system. It has a thick atmosphere of carbon dioxide and extreme surface temperatures.</p>
+    
+    <div class="planet-container">
+        <img src="../image/Venus.jpg" alt="Venus">
+        
+        <div class="buttons">
+            <button onclick="toggleInfo()">ℹ️ More Info</button>
+            <button onclick="toggleFacts()">📜 More Facts</button>
+           
+        </div>
+        
+        <div class="info-box" id="infoBox">
+            <p>Venus is often called Earth's "sister planet" because of its similar size and composition. However, its environment is extremely hostile. The thick atmosphere traps heat, making it even hotter than Mercury.</p>
+        </div>
+
+        <div class="info-box" id="factsBox">
+            <ul>
+                <li>🌋 Venus has over 1,600 volcanoes.</li>
+                <li>💨 The atmosphere is 96% carbon dioxide.</li>
+                <li>⏳ One day on Venus is longer than a year on Venus.</li>
+                <li>🔥 Surface temperature can reach 475°C (900°F).</li>
+                <li>🌫️ Venus experiences acid rain made of sulfuric acid.</li>
+            </ul>
+        </div>
+    </div>
+
+    <audio id="venusSound" src="../audio/venus.mp3"></audio>
+    <script src="venus.js"></script>
+</body>
+</html>

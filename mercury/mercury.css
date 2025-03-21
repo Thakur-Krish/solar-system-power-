@@ -1,0 +1,115 @@
+  /* Import futuristic font */
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+  /* Background animation */
+  body {
+      background: radial-gradient(circle, #000000, #1a1a1a);
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+      height: 100vh;
+  }
+
+  .background-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('../image/space-bg.gif');
+      opacity: 0.2;
+      z-index: -1;
+  }
+
+  /* Title Glow Effect */
+  h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+  }
+
+  /* Mercury Image Styling */
+  .planet-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+  }
+
+  .planet-image {
+      width: 300px;
+      border-radius: 50%;
+      box-shadow: 0 0 40px orange;
+      transition: transform 0.5s ease-in-out;
+      animation: rotatePlanet 10s infinite linear;
+  }
+
+  @keyframes rotatePlanet {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+
+  .planet-image:hover {
+      transform: scale(1.1);
+  }
+
+  /* Button Styling */
+  .buttons {
+      margin-top: 20px;
+  }
+
+  button {
+      background: rgba(255, 165, 0, 0.1);
+      border: 1px solid orange;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+  }
+
+  button:hover {
+      background: orange;
+      color: black;
+      transform: scale(1.1);
+      box-shadow: 0 0 15px orange;
+  }
+
+  /* Glassmorphism Panels */
+  .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 15px;
+      width: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      display: none;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+      transition: 0.5s ease-in-out;
+  }
+
+  /* Title Glowing Effect */
+  .glow-text {
+      text-shadow: 0 0 15px orange;
+  }
+  /* Tablet */
+@media (max-width: 1024px) {  
+    body { font-size: 18px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {  
+    body { font-size: 16px; }
+    nav ul { flex-direction: column; }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {  
+    body { font-size: 14px; }
+}

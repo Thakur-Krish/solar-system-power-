@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sun - The Heart of the Solar System</title>
+    <link rel="stylesheet" href="sun.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow-text">☀️ The Sun - The Heart of Our Solar System</h1>
+        <p class="sub-heading">A massive glowing ball of hot plasma that powers life on Earth.</p>
+        
+        <div class="planet-container">
+            <img src="../image/sun.jpg" alt="Sun Image" class="sun-image">
+            <div class="buttons">
+                <button onclick="toggleInfo()">ℹ️ More Info</button>
+                <button onclick="toggleFacts()">🔥 Sun Facts</button>
+                <button onclick="toggleSound()">🔊 Hear the Sun</button>
+            </div>
+        </div>
+        
+        <div class="glass info-box" id="infoBox">
+            <p>The Sun is a gigantic, nuclear-fusion-powered star that provides light, heat, and energy to our entire Solar System. It is made mostly of hydrogen and helium.</p>
+        </div>
+
+        <div class="glass facts-box" id="factsBox">
+            <ul>
+                <li>☀️ Diameter: 1,391,000 km</li>
+                <li>🔥 Surface Temperature: 5,500°C</li>
+                <li>🌟 Core Temperature: 15 million°C</li>
+                <li>🌍 Provides 99.8% of the Solar System's mass</li>
+            </ul>
+        </div>
+    </div>
+    
+    <audio id="planetSound" src="../audio/solarsystem.mp3"></audio>
+    <script src="sun.js"></script>
+</body>
+</html>

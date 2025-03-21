@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Moon - Earth's Companion</title>
+    <link rel="stylesheet" href="moon.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow-text">🌙 The Moon - Earth's Companion</h1>
+        <p class="sub-heading">Our closest celestial neighbor and the cause of tides on Earth.</p>
+        
+        <div class="planet-container">
+            <img src="../image/moon.jpg" alt="Moon Image" class="moon-image">
+            <div class="buttons">
+                <button onclick="toggleInfo()">ℹ️ More Info</button>
+                <button onclick="toggleFacts()">🌕 Moon Facts</button>
+                <button onclick="toggleSound()">🔊 Hear the Moon</button>
+            </div>
+        </div>
+        
+        <div class="glass info-box" id="infoBox">
+            <p>The Moon is Earth's only natural satellite, affecting tides and night visibility. It has been a source of wonder and exploration, with the first human landing in 1969.</p>
+        </div>
+
+        <div class="glass facts-box" id="factsBox">
+            <ul>
+                <li>🌍 Diameter: 3,474 km</li>
+                <li>🌡️ Temperature: -173°C to 127°C</li>
+                <li>🕒 Orbit Duration: 27.3 days</li>
+                <li>🚀 First Human Landing: 1969</li>
+            </ul>
+        </div>
+    </div>
+    
+    <audio id="planetSound" src="../audio/moon.mp3"></audio>
+    <script src="moon.js"></script>
+</body>
+</html>

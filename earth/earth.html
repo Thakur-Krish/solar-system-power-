@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="earth.css">
+    <title>Earth - Our Home Planet</title>
+</head>
+<body>
+    <h1>Earth</h1>
+    <p>Earth is the third planet from the Sun and the only known celestial body that supports life. It has a rich atmosphere, vast oceans, and diverse ecosystems.</p>
+    
+    <div class="planet-container">
+        <img src="../image/Earth.jpg" alt="Earth">
+        
+        <div class="buttons">
+            <button onclick="toggleInfo()">ℹ️ More Info</button>
+            <button onclick="toggleFacts()">📜 More Facts</button>
+           
+        </div>
+        
+        <div class="info-box" id="infoBox">
+            <p>Earth is unique because it has liquid water, oxygen-rich air, and the perfect conditions for life. It has one natural satellite, the Moon, which influences its tides.</p>
+        </div>
+
+        <div class="info-box" id="factsBox">
+            <ul>
+                <li>🌊 Over 70% of Earth's surface is covered by water.</li>
+                <li>🌍 Earth is approximately 4.5 billion years old.</li>
+                <li>🌪️ It has an atmosphere composed mainly of nitrogen (78%) and oxygen (21%).</li>
+                <li>🌕 Earth’s Moon is about 1/6th the size of Earth.</li>
+                <li>🌿 It is home to millions of species, making it the most biodiverse planet known.</li>
+            </ul>
+        </div>
+    </div>
+
+    <audio id="earthSound" src="../audio/earth.mp3"></audio>
+    <script src="earth.js"></script>
+</body>
+</html>

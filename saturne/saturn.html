@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn - The Ringed Planet</title>
+    <link rel="stylesheet" href="saturn.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>🪐 Saturn</h1>
+        <p class="subtitle">The Jewel of the Solar System</p>
+
+        <div class="planet-container">
+            <img src="../image/Saturn.jpg" alt="Saturn" class="planet-image">
+        </div>
+
+        <div class="buttons">
+            <button onclick="toggleInfo()">ℹ️ More Info</button>
+            <button onclick="toggleFacts()">📜 More Facts</button>
+           
+        </div>
+
+        <div class="info-box" id="infoBox">
+            <p>Saturn is a gas giant with the most **stunning ring system** in our solar system.</p>
+        </div>
+
+        <div class="info-box" id="factsBox">
+            <ul>
+                <li>💍 Saturn’s **rings are made of ice, dust, and rock.**</li>
+                <li>🌌 It has **more than 80 moons**, including Titan.</li>
+                <li>⚡ Saturn’s winds reach **1,800 km/h (1,118 mph).**</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="saturn.js"></script>
+</body>
+</html>
