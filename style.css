@@ -94,7 +94,7 @@ nav ul li a:hover, .active {
     }
 }
 body {
-    background-image: url('../image/solar system.jpg');
+    background-image: url('image/solar system.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
